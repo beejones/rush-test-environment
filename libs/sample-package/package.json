@@ -1,0 +1,40 @@
+{
+  "name": "@beejones/sample-package",
+  "version": "1.0.0",
+  "description": "Package for testing rush.",
+  "author": "Beejones",
+  "license": "MIT",
+  "main": "./dist/lib/index.js",
+  "scripts": {
+    "build": "tsc --p tsconfig.json",
+    "test": "nyc jasmine-ts --config=./tests/jasmine.json"
+  },
+  "devDependencies": {  
+    "@types/jasmine": "^2.8.9",
+    "jasmine": "^3.2.0",
+    "jasmine-reporters": "^2.3.2",
+    "jasmine-spec-reporter": "^4.2.1",
+    "jasmine-ts": "^0.3.0",
+    "nyc": "^13.0.1",
+    "ts-node": "^7.0.1",
+    "typescript": "3.4.5",
+    "typescript-map": "0.0.7"
+  },
+  "dependencies": {
+    "@types/node": "^12.7.7"
+  },
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "include": [
+      "lib/**"
+    ],
+    "reporter": [
+      "text",
+      "cobertura",
+      "html"
+    ]
+  }
+}
