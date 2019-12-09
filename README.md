@@ -15,4 +15,11 @@ cd  libs\sample-package in terminal
 npm run test
 
 
+## debugging with visual code
+
+open tests\Calculator.spec.ts in VS
+
+Set breakpoint on test
+
+Press F5
 
