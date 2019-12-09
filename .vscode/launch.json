@@ -7,6 +7,7 @@
     {
         "type": "node",
         "request": "launch",
+        "cwd": "${fileDirname}/..",
         "name": "Jasmine - Current file",
         "program": "${fileDirname}/../node_modules/jasmine-ts/lib/index",
         "args": ["${file}"],
