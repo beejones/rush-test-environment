@@ -1,7 +1,9 @@
 ## Report problem with project linking
 
-This repository contains three projects 
+This repository contains three projects.
+
 "projects": [
+
     {
       "packageName": "@beejones/calculator-interface",
       "projectFolder": "libs/calculator-interface"
@@ -69,6 +71,7 @@ PS C:\did1\rush-test-environment>
 # rush build will fail in FancyCalculator because calculator-interface is not found.
 
 # calculator-interface is missing from rush-link.json
+
 {
   "localLinks": {
     "@beejones/fancy-calculator": [

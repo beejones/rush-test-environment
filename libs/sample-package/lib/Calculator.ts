@@ -5,6 +5,6 @@ import { FancyCalculator } from '@beejones/fancy-calculator';
  */
 export default class Calculator {
     static add(n1: number, n2: number): number {
-        return FancyCalculator.add(n1, n2);
+        return new FancyCalculator().add(n1, n2);
     } 
 }
