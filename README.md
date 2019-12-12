@@ -49,7 +49,7 @@ Updating C:\did1\rush-test-environment\common\config\rush\shrinkwrap.yaml
 
 Linking projects together...
 
-#LINKING: @beejones/calculator-interface
+# LINKING: @beejones/calculator-interface
 Purging C:\did1\rush-test-environment\libs\calculator-interface\node_modules
 
 LINKING: @beejones/fancy-calculator
@@ -66,8 +66,25 @@ Next you should probably run "rush build" or "rush rebuild"
 Rush update finished successfully. (8.71 seconds)
 PS C:\did1\rush-test-environment>
 
-rush build will fail in FancyCalculator because calculator-interface is not found.
+# rush build will fail in FancyCalculator because calculator-interface is not found.
 
+# calculator-interface is missing from rush-link.json
+{
+  "localLinks": {
+    "@beejones/fancy-calculator": [
+      "@beejones/calculator-interface"
+    ],
+    "@beejones/sample-package": [
+      "@beejones/calculator-interface",
+      "@beejones/fancy-calculator"
+    ]
+  }
+}
+
+# Tested environment
+Visual code 1.40.2
+Rush Multi-Project Build Tool 5.13.0 - https://rushjs.io
+Node.js version is 12.13.1 (LTS)
 
 ## Install rush
 
