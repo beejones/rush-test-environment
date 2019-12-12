@@ -304,6 +304,14 @@
    */
    "projects": [
     {
+      "packageName": "@beejones/calculator-interface",
+      "projectFolder": "libs/calculator-interface"
+    },
+    {
+      "packageName": "@beejones/fancy-calculator",
+      "projectFolder": "libs/fancy-calculator"
+    },
+    {
       "packageName": "@beejones/sample-package",
       "projectFolder": "libs/sample-package"
     }
