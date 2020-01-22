@@ -1,12 +1,12 @@
 {
-  "name": "@beejones/sample-package",
+  "name": "@beejones/fancy-calculator",
   "version": "1.0.0",
-  "description": "Package to illustrate rush.",
+  "description": "Simple calculator.",
   "repository": {
     "type": "git",
     "url": "https://msazure.visualstudio.com/DefaultCollection/One/_git/AD-DID-Services-Enterprise-Agent.git"
   },
-  "author": "beejones",
+  "author": "Microsoft Corporation",
   "license": "MIT",
   "main": "./dist/lib/index.js",
   "scripts": {
@@ -30,9 +30,8 @@
     "yargs": "^15.0.2"
   },
   "dependencies": {
-    "@types/node": "^12.7.7",
-    "@beejones/fancy-calculator": "^1.0.0",
-    "@beejones/calculator-interface": "^1.0.0"
+    "@beejones/calculator-interface": "^1.0.0",
+    "@types/node": "^12.7.7"
   },
   "nyc": {
     "extension": [

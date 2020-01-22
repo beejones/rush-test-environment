@@ -1,14 +1,14 @@
 {
-  "name": "@beejones/sample-package",
+  "name": "@beejones/calculator-interface",
   "version": "1.0.0",
-  "description": "Package to illustrate rush.",
+  "description": "Simple interface for calculator.",
   "repository": {
     "type": "git",
     "url": "https://msazure.visualstudio.com/DefaultCollection/One/_git/AD-DID-Services-Enterprise-Agent.git"
   },
   "author": "beejones",
   "license": "MIT",
-  "main": "./dist/lib/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "tsc --p tsconfig.json",
     "test": "nyc jasmine-ts --config=./tests/jasmine.json",
@@ -30,9 +30,7 @@
     "yargs": "^15.0.2"
   },
   "dependencies": {
-    "@types/node": "^12.7.7",
-    "@beejones/fancy-calculator": "^1.0.0",
-    "@beejones/calculator-interface": "^1.0.0"
+    "@types/node": "^12.7.7"
   },
   "nyc": {
     "extension": [
