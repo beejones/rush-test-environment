@@ -1,9 +1,11 @@
 dependencies:
   '@rush-temp/calculator-interface': 'file:projects/calculator-interface.tgz'
   '@rush-temp/fancy-calculator': 'file:projects/fancy-calculator.tgz'
+  '@rush-temp/fancy-calculator-v2': 'file:projects/fancy-calculator-v2.tgz'
   '@rush-temp/sample-package': 'file:projects/sample-package.tgz'
   '@types/jasmine': 2.8.9
   '@types/node': 12.12.17
+  case-1.5.3: /case/1.6.2
   jasmine: 3.2.0
   jasmine-reporters: 2.3.2
   jasmine-spec-reporter: 4.2.1
@@ -125,6 +127,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Is+l3mcHvs47sKy+afn2O1rV4ldZFU7W8101cNlOd+MRbjM4Onida8jSZnJdTe/0Pcf25g9BNIUsuugmE6puHA==
+  /@types/node/12.12.25:
+    dev: false
+    resolution:
+      integrity: sha512-nf1LMGZvgFX186geVZR1xMZKKblJiRfiASTHw85zED2kI1yDKHDwTKMdkaCbTlXoRKlGKaDfYywt+V0As30q3w==
   /ansi-regex/2.1.1:
     dev: false
     engines:
@@ -151,7 +157,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==
-  /ansi-styles/4.2.0:
+  /ansi-styles/4.2.1:
     dependencies:
       '@types/color-name': 1.1.1
       color-convert: 2.0.1
@@ -159,7 +165,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-7kFQgnEaMdRtwf6uSfUnVr9gSGC7faurn+J/Mv90/W+iTtN0405/nLdopfMWwchyxhbGYl6TC4Sccn9TUkGAgg==
+      integrity: sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
   /argparse/1.0.10:
     dependencies:
       sprintf-js: 1.0.3
@@ -205,6 +211,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
+  /case/1.6.2:
+    dev: false
+    engines:
+      node: '>= 0.8.0'
+    resolution:
+      integrity: sha512-ll380ZRoraT7mUK2G92UbH+FJVD5AwdVIAYk9xhV1tauh0carDgYByUD1HhjCWsWgxrfQvCeHvtfj7IYR6TKeg==
   /chalk/2.4.2:
     dependencies:
       ansi-styles: 3.2.1
@@ -500,7 +512,7 @@ packages:
   /jasmine-reporters/2.3.2:
     dependencies:
       mkdirp: 0.5.1
-      xmldom: 0.1.27
+      xmldom: 0.1.31
     dev: false
     resolution:
       integrity: sha512-u/7AT9SkuZsUfFBLLzbErohTGNsEUCKaQbsVYnLFW1gEuL2DzmBL4n8v90uZsqIqlWvWUgian8J6yOt5Fyk/+A==
@@ -755,14 +767,14 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-vvcXsLAJ9Dr5rQOPk7toZQZJApBl2K4J6dANSsEuh6QI41JYcsS/qhTGa9ErIUUgK3WNQoJYvylxvjqmiqEA9Q==
-  /p-limit/2.2.1:
+  /p-limit/2.2.2:
     dependencies:
       p-try: 2.2.0
     dev: false
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-85Tk+90UCVWvbDavCLKPOLC9vvY8OwEX/RtKF+/1OADJMVlFfEHOiMTPVyxg7mk/dKa+ipdHm0OUkTvCpMTuwg==
+      integrity: sha512-WGR+xHecKTr7EbUEhyLSh5Dube9JtdiG78ufaeLxTgpudf/20KqyMioIUZJAezlTIi6evxuoUs9YXc11cU+yzQ==
   /p-locate/2.0.0:
     dependencies:
       p-limit: 1.3.0
@@ -773,7 +785,7 @@ packages:
       integrity: sha1-IKAQOyIqcMj9OcwuWAaA893l7EM=
   /p-locate/4.1.0:
     dependencies:
-      p-limit: 2.2.1
+      p-limit: 2.2.2
     dev: false
     engines:
       node: '>=8'
@@ -1174,7 +1186,7 @@ packages:
       integrity: sha1-2Pw9KE3QV5T+hJc8rs3Rz4JP3YU=
   /wrap-ansi/6.2.0:
     dependencies:
-      ansi-styles: 4.2.0
+      ansi-styles: 4.2.1
       string-width: 4.2.0
       strip-ansi: 6.0.0
     dev: false
@@ -1186,12 +1198,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-  /xmldom/0.1.27:
+  /xmldom/0.1.31:
     dev: false
     engines:
       node: '>=0.1'
     resolution:
-      integrity: sha1-1QH5ezvbQDr4757MIFcxh6rawOk=
+      integrity: sha512-yS2uJflVQs6n+CyjHoaBmVSqIDevTAWrzMmjG1Gc7h1qQ7uVozNhEPJAwZXWyGQ/Gafo3fCwrcaokezLPupVyQ==
   /y18n/3.2.1:
     dev: false
     resolution:
@@ -1233,6 +1245,24 @@ packages:
     dev: false
     resolution:
       integrity: sha512-GH/X/hYt+x5hOat4LMnCqMd8r5Cv78heOMIJn1hr7QPPBqfeC6p89Y78+WB9yGDvfpCvgasfmWLzNzEioOUD9Q==
+  /yargs/15.1.0:
+    dependencies:
+      cliui: 6.0.0
+      decamelize: 1.2.0
+      find-up: 4.1.0
+      get-caller-file: 2.0.5
+      require-directory: 2.1.1
+      require-main-filename: 2.0.0
+      set-blocking: 2.0.0
+      string-width: 4.2.0
+      which-module: 2.0.0
+      y18n: 4.0.0
+      yargs-parser: 16.1.0
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-T39FNN1b6hCW4SOIk1XyTOWxtXdcen0t+XYrysQmChzSipvhBO8Bj0nK1ozAasdk24dNWuMZvr4k24nz+8HHLg==
   /yargs/8.0.2:
     dependencies:
       camelcase: 4.1.0
@@ -1278,6 +1308,27 @@ packages:
       integrity: sha512-4KMDJZ0I6Q2BevS4r4d7/OuDGIUyTf+KJzAYJNU8syEtXcoCgTEgbGzJ8VO0Qsx6XtpGE3mnN1erZhgpvchvMg==
       tarball: 'file:projects/calculator-interface.tgz'
     version: 0.0.0
+  'file:projects/fancy-calculator-v2.tgz':
+    dependencies:
+      '@types/jasmine': 2.8.9
+      '@types/node': 12.12.25
+      jasmine: 3.2.0
+      jasmine-reporters: 2.3.2
+      jasmine-spec-reporter: 4.2.1
+      jasmine-ts: /jasmine-ts/0.3.0/95621f4b4bfc94a4c420e7256ae9399d
+      nyc: 13.0.1
+      prettier: 1.19.1
+      ts-node: 7.0.1
+      tslint: /tslint/5.20.1/typescript@3.4.5
+      typescript: 3.4.5
+      typescript-map: 0.0.7
+      yargs: 15.1.0
+    dev: false
+    name: '@rush-temp/fancy-calculator-v2'
+    resolution:
+      integrity: sha512-mape2hTqM2zYGNHxT4xdrvXjnoXsKUer1dUG8GU2M608JZ7hhyBJ/J3bEphzPSYZZZjp6sS1qc7+sDw4niF35g==
+      tarball: 'file:projects/fancy-calculator-v2.tgz'
+    version: 0.0.0
   'file:projects/fancy-calculator.tgz':
     dependencies:
       '@types/jasmine': 2.8.9
@@ -1303,6 +1354,7 @@ packages:
     dependencies:
       '@types/jasmine': 2.8.9
       '@types/node': 12.12.17
+      case-1.5.3: /case/1.6.2
       jasmine: 3.2.0
       jasmine-reporters: 2.3.2
       jasmine-spec-reporter: 4.2.1
@@ -1317,7 +1369,7 @@ packages:
     dev: false
     name: '@rush-temp/sample-package'
     resolution:
-      integrity: sha512-AgMRnKZp1KyVOhAt3b72y1Y3xyAjUT5VyqGJtqkEOR0L6dKaqfGyysES12G/ucy0lW48mZMH/xT0aaNvqcA6ew==
+      integrity: sha512-I7ygp9Cu1l7QlyyP6M8TYdNUts/tOepOpVbOEwxnA9pCDIqOO1r8Nf2Hdzvqb05PlxujqJpj1xOMGonlOzFBUQ==
       tarball: 'file:projects/sample-package.tgz'
     version: 0.0.0
 registry: 'https://registry.npmjs.org/'
@@ -1326,9 +1378,11 @@ shrinkwrapVersion: 3
 specifiers:
   '@rush-temp/calculator-interface': 'file:./projects/calculator-interface.tgz'
   '@rush-temp/fancy-calculator': 'file:./projects/fancy-calculator.tgz'
+  '@rush-temp/fancy-calculator-v2': 'file:./projects/fancy-calculator-v2.tgz'
   '@rush-temp/sample-package': 'file:./projects/sample-package.tgz'
   '@types/jasmine': 2.8.9
   '@types/node': ^12.7.7
+  case-1.5.3: 'npm:case@^1.5.3'
   jasmine: 3.2.0
   jasmine-reporters: 2.3.2
   jasmine-spec-reporter: 4.2.1

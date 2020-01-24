@@ -312,6 +312,10 @@
       "projectFolder": "libs/fancy-calculator"
     },
     {
+      "packageName": "@beejones/fancy-calculator-v2",
+      "projectFolder": "libs/fancy-calculator-v2"
+    },
+    {
       "packageName": "@beejones/sample-package",
       "projectFolder": "libs/sample-package"
     }
